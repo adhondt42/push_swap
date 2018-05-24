@@ -32,6 +32,9 @@ typedef struct	s_pm
 
 
 // data_initialization.c
+void			int_verification(char **argv, int argc);
+void			doublon_verification(t_pm *s);
+void			arg_error(int n);
 void			init_s(t_pm **s, int argc, char **argv);
 void			init_f(void (*f[13])(t_pm *s, int i));
 // checker_main.c
