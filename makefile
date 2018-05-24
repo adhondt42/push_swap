@@ -6,7 +6,7 @@
 #    By: adhondt <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/05/22 21:33:32 by adhondt           #+#    #+#              #
-#    Updated: 2018/05/24 10:44:20 by adhondt          ###   ########.fr        #
+#    Updated: 2018/05/24 13:49:28 by adhondt          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ INC_PATH = ./inc
 OBJ_PATH = ./obj
 OBJLIB_PATH = ./obj
 
-SRC_NAME =	 main.c data_initialization.c main_checker.c \
+SRC_NAME =	 main.c data_initialization.c main_checker.c cmd_list.c \
 
 
 LIB_NAME = 	ft_intnew.c ft_putchar.c ft_putstr.c intlen.c ft_put2str.c \

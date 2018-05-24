@@ -6,7 +6,7 @@
 /*   By: adhondt <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/23 18:57:03 by adhondt           #+#    #+#             */
-/*   Updated: 2018/05/24 11:20:50 by adhondt          ###   ########.fr       */
+/*   Updated: 2018/05/24 16:19:52 by adhondt          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,18 @@ void	init_s(t_pm **s, int argc, char **argv)
 		(*s)->a[i] = ft_atoi(argv[i + 1]);
 }
 
-void	init_f(void (*f[12])(t_pm *s))
+void	init_f(void (*f[13])(t_pm *s, int i))
 {
-	f[0] = cmd_sa;
-	f[1] = cmd_sb;
+	f[0] = cmd_s;
+	f[1] = cmd_s;
+	f[2] = cmd_s;
+	f[3] = cmd_p;
+	f[4] = cmd_p;
+	f[5] = cmd_r;
+	f[6] = cmd_r;
+	f[7] = cmd_r;
+	f[8] = cmd_rr;
+	f[9] = cmd_rr;
+	f[10] = cmd_rr;
 
 }

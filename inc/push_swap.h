@@ -6,7 +6,7 @@
 /*   By: adhondt <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/23 17:55:28 by adhondt           #+#    #+#             */
-/*   Updated: 2018/05/24 11:20:57 by adhondt          ###   ########.fr       */
+/*   Updated: 2018/05/24 16:19:50 by adhondt          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,15 @@ typedef struct	s_pm
 
 // data_initialization.c
 void			init_s(t_pm **s, int argc, char **argv);
-void			init_f(void (*f[12])(t_pm *s));
+void			init_f(void (*f[13])(t_pm *s, int i));
 // checker_main.c
 void			run_checker(t_pm *s);
 // fct
-void			cmd_sa(t_pm *s);
-void			cmd_sb(t_pm *s);
+void			cmd_p(t_pm *s, int i);
+void			cmd_r(t_pm *s, int i);
+void			cmd_s(t_pm *s, int i);
+void			cmd_rr(t_pm *s, int i);
+void			ft_error(void);
 
 /*
  * LIB
