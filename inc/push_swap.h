@@ -6,7 +6,7 @@
 /*   By: adhondt <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/23 17:55:28 by adhondt           #+#    #+#             */
-/*   Updated: 2018/05/23 19:50:20 by adhondt          ###   ########.fr       */
+/*   Updated: 2018/05/24 11:20:57 by adhondt          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
-# define BUFF_SIZE 32
+# define BUFF_SIZE 4
 
 typedef struct	s_pm
 {
@@ -33,10 +33,23 @@ typedef struct	s_pm
 
 // data_initialization.c
 void			init_s(t_pm **s, int argc, char **argv);
+void			init_f(void (*f[12])(t_pm *s));
+// checker_main.c
+void			run_checker(t_pm *s);
+// fct
+void			cmd_sa(t_pm *s);
+void			cmd_sb(t_pm *s);
 
 /*
  * LIB
  */
+int				pos_str_tab(char *haystack, char **needle);
+int				pos_c_str(char c, char *str);
+int				get_next_line(const int fd, char **line);
+char			*ft_strjoin_f(char const *s1, char const *s2, int j);
+char			*ft_strcpy(char *dest, const char *src);
+char			*ft_strcat(char *dest, const char *src);
+char			*ft_strsub(char const *s, unsigned int start, size_t len);
 char			*ft_strchr(const char *s, int c);
 char			*ft_strdup(const char *s);
 char			*ft_strjoin_f(char const *s1, char const *s2, int j);

@@ -1,26 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adhondt <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/23 17:55:07 by adhondt           #+#    #+#             */
-/*   Updated: 2018/05/24 11:18:40 by adhondt          ###   ########.fr       */
+/*   Created: 2018/05/22 21:24:08 by adhondt           #+#    #+#             */
+/*   Updated: 2018/05/24 09:39:58 by adhondt          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
 
-int			main(int argc, char **argv)
+char	*ft_strcat(char *dest, const char *src)
 {
-	t_pm	*s;
+	int		i;
+	char	*csrc;
 
-	init_s(&s, argc, argv);
-	ft_putinttab(s->a, argc - 1, "\n");
-	run_checker(s);
-	free(s->a);
-	free(s->b);
-	free(s);
-	return (0);
+	i = ft_strlen(dest);
+	csrc = (char *)src;
+	while (*csrc)
+	{
+		dest[i] = *csrc;
+		i++;
+		csrc++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
