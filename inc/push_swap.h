@@ -46,6 +46,8 @@ void			ft_error(void);
 /*
  * LIB
  */
+int				ft_atoi(const char *str);
+int				ft_isdigit(int c);
 int				pos_str_tab(char *haystack, char **needle);
 int				pos_c_str(char c, char *str);
 int				get_next_line(const int fd, char **line);
@@ -57,7 +59,7 @@ char			*ft_strchr(const char *s, int c);
 char			*ft_strdup(const char *s);
 char			*ft_strjoin_f(char const *s1, char const *s2, int j);
 void			ft_putinttab(int *tab, int size, char *sp);
-int				ft_atoi(const char *str);
+long int		ft_latoi(const char *str);
 int				*ft_intnew(size_t size, int value);
 void			ft_put2str(char *str, char *strb);
 void			ft_putchar(char c);

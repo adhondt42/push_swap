@@ -1,40 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adhondt <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/21 21:42:55 by adhondt           #+#    #+#             */
-/*   Updated: 2018/05/23 16:14:16 by adhondt          ###   ########.fr       */
+/*   Created: 2017/11/10 15:58:23 by adhondt           #+#    #+#             */
+/*   Updated: 2018/05/23 16:14:25 by adhondt          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
 
-int	ft_atoi(const char *str)
+int	ft_isdigit(int c)
 {
-	int nb;
-	int neg;
-	int i;
-
-	neg = 0;
-	nb = 0;
-	i = 0;
-	while ((str[i] == ' ') || (str[i] == '\n') || (str[i] == '\t') ||
-			(str[i] == '\v') || (str[i] == '\r') || (str[i] == '\f'))
-		i++;
-	if (str[i] == '-')
-		neg = 1;
-	if (str[i] == '-' || str[i] == '+')
-		i++;
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		nb *= 10;
-		nb += (str[i] - '0');
-		i++;
-	}
-	if (neg == 1)
-		return (-nb);
-	return (nb);
+	return (c >= '0' && c <= '9');
 }
