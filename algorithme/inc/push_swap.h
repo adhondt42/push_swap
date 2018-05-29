@@ -6,7 +6,7 @@
 /*   By: adhondt <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/23 17:55:28 by adhondt           #+#    #+#             */
-/*   Updated: 2018/05/28 23:24:27 by adhondt          ###   ########.fr       */
+/*   Updated: 2018/05/29 17:56:16 by adhondt          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ typedef struct	s_pm
 	int			*a;
 	int			*b;
 	int			med;
+	int			cmd_nbr;
 	int			alen;
 	int			blen;
 }				t_pm;
@@ -47,6 +48,12 @@ void			cmd_r(t_pm *s, int i);
 void			cmd_s(t_pm *s, int i);
 void			cmd_rr(t_pm *s, int i);
 void			ft_error(void);
+
+void			cmd_s(t_pm *s, int i);
+void			cmd_p(t_pm *s, int i);
+void			cmd_r(t_pm *s, int i);
+void			cmd_rr(t_pm *s, int i);
+
 
 /*
  * LIB

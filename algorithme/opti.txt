@@ -1,0 +1,2 @@
+les cmd_p appellent les instruction cmd_rr et cmd_r
+-> Passer par des fonctions pour reformer les tableaux de int.

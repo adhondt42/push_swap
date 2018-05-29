@@ -6,7 +6,7 @@
 /*   By: adhondt <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/23 18:57:03 by adhondt           #+#    #+#             */
-/*   Updated: 2018/05/28 23:08:24 by adhondt          ###   ########.fr       */
+/*   Updated: 2018/05/29 17:56:04 by adhondt          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,17 @@
 
 void	init_f(void (*f[13])(t_pm *s, int i))
 {
-	f[0] = cmd_s;
-	f[1] = cmd_s;
-	f[2] = cmd_s;
-	f[3] = cmd_p;
-	f[4] = cmd_p;
-	f[5] = cmd_r;
-	f[6] = cmd_r;
-	f[7] = cmd_r;
-	f[8] = cmd_rr;
-	f[9] = cmd_rr;
-	f[10] = cmd_rr;
+	f[0] = cmd_s; //sa
+	f[1] = cmd_s; //sb
+	f[2] = cmd_s; //sa sb
+	f[3] = cmd_p; //pa
+	f[4] = cmd_p; //pb
+	f[5] = cmd_r; // ra -> rotation vers le haut
+	f[6] = cmd_r; // rb
+	f[7] = cmd_r; //ra rb 
+	f[8] = cmd_rr;//rra
+	f[9] = cmd_rr;//rrb
+	f[10] = cmd_rr;//rra rrb
 }
 
 void	init_s(t_pm **s, int argc, char **argv)
@@ -39,6 +39,7 @@ void	init_s(t_pm **s, int argc, char **argv)
 	(*s)->med = 0;
 	(*s)->alen = argc -1;
 	(*s)->blen = 0;
+	(*s)->cmd_nbr = 0;
 	while (++i < argc - 1)
 		(*s)->a[i] = ft_atoi(argv[i + 1]);
 }
