@@ -6,7 +6,7 @@
 /*   By: adhondt <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/23 17:55:28 by adhondt           #+#    #+#             */
-/*   Updated: 2018/05/29 17:56:16 by adhondt          ###   ########.fr       */
+/*   Updated: 2018/05/30 13:31:10 by adhondt          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,10 @@ typedef struct	s_pm
 	int			blen;
 }				t_pm;
 
+
+
+//organize_a
+void			organize_a(t_pm *s);
 
 // main.c
 

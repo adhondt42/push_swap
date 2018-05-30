@@ -6,7 +6,7 @@
 #    By: adhondt <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/05/22 21:33:32 by adhondt           #+#    #+#              #
-#    Updated: 2018/05/28 23:25:10 by adhondt          ###   ########.fr        #
+#    Updated: 2018/05/30 13:31:22 by adhondt          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ INC_PATH = ./inc
 OBJ_PATH = ./obj
 OBJLIB_PATH = ./obj
 
-SRC_NAME =	 main.c data_initialization.c cmd_list.c quick_sort.c \
+SRC_NAME =	 main.c data_initialization.c cmd_list.c quick_sort.c organize_a.c \
 
 
 LIB_NAME = 	ft_intnew.c ft_putchar.c ft_putstr.c intlen.c ft_put2str.c \
