@@ -6,7 +6,7 @@
 /*   By: adhondt <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/23 17:55:28 by adhondt           #+#    #+#             */
-/*   Updated: 2018/05/25 13:41:37 by adhondt          ###   ########.fr       */
+/*   Updated: 2018/05/30 16:15:41 by adhondt          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ void			init_f(void (*f[13])(t_pm *s, int i));
 // checker_main.c
 void			run_checker(t_pm *s);
 // fct
+void			quick_sort(int *a, int alen);
 void			cmd_p(t_pm *s, int i);
 void			cmd_r(t_pm *s, int i);
 void			cmd_s(t_pm *s, int i);
@@ -49,6 +50,10 @@ void			ft_error(void);
 /*
  * LIB
  */
+
+void			swap_int(int *a, int *b);
+int				ft_inttab_cmp(int *a, int alen, int *b, int blen);
+int				*copy_inttab(int *a, int alen);
 int				ft_atoi(const char *str);
 int				ft_isdigit(int c);
 int				pos_str_tab(char *haystack, char **needle);

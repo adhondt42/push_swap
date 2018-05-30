@@ -6,7 +6,7 @@
 #    By: adhondt <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/05/22 21:33:32 by adhondt           #+#    #+#              #
-#    Updated: 2018/05/24 13:49:28 by adhondt          ###   ########.fr        #
+#    Updated: 2018/05/30 16:16:08 by adhondt          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,13 +27,14 @@ OBJ_PATH = ./obj
 OBJLIB_PATH = ./obj
 
 SRC_NAME =	 main.c data_initialization.c main_checker.c cmd_list.c \
+			 quick_sort.c \
 
 
 LIB_NAME = 	ft_intnew.c ft_putchar.c ft_putstr.c intlen.c ft_put2str.c \
 			ft_putnbr.c ft_strcmp.c ft_strlen.c ft_latoi.c ft_putinttab.c \
 			ft_strjoin_f.c ft_strdup.c ft_strchr.c ft_strsub.c ft_strcat.c \
 			ft_strcpy.c get_next_line.c pos_c_str.c pos_str_tab.c ft_isdigit.c \
-			ft_atoi.c \
+			ft_atoi.c copy_inttab.c ft_inttab_cmp.c swap_int.c \
 
 INC_NAME = push_swap.h
 
